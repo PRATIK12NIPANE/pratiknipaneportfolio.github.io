@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+            
+    <header>
+      <nav class="navbar">
+          <div class="navbar-header">
+              <button class="navbar-toggle" id="toggle-btn">
+              </button>
+          </div>
+
+          <ul class="navbar-nav" id="navbar-menu">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+             </ul>
+             
+      </nav>
+  </header>
+
+
+    <main>
+      <section id="home" class="home-section">
+        <div class="overlay"></div>
+        <div class="home-content">
+          <h1>Welcome to My Portfolio</h1>
+          <p>Showcasing my creative work and projects.</p>
+          <a href="#portfolio" class="btn">View Portfolio</a>
+          <a href="#contact" class="btn">Contact Me</a>
+          <a href="pratik resume 12.pdf" class="btn" download>Download Resume</a>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="flex">
+            <div class="about-image">
+              <img src="photo/pratik logo.jpg" alt="My Photo">
+            </div>
+            <div class="about-text">
+              <h1>Hi There! I'm <br> Pratik Nipane</h1>
+              <p>I am a professional software developer with a passion for
+                creating innovative solutions. With a strong background in
+                programming and HTML, CSS, PHP, Core Java, Advance java, C, C++,
+                C#, & ASP.NET I
+                thrive in fast-paced environments and excel at delivering
+                high-quality code. My portfolio showcases a diverse range of
+                projects that highlight my expertise in problem-solving,
+                attention to detail, and commitment to producing exceptional
+                results. I am constantly expanding my knowledge and staying
+                up-to-date with the latest advancements in the field to ensure
+                that I can provide cutting-edge solutions to clients. I am
+                excited to collaborate on new projects and contribute my skills
+                to drive impactful outcomes.</p>
+              <ul>
+                <li>Birthday : Aug 12,2003 </li>
+                <li>Phone : 8010835008 </li>
+                <li>Email : nipanepratik12@gmail.com </li>
+                <li>from : Satara Maharastra, india</li>
+                <li>language : Engalish, Hindi, Marathi</li>
+                <li>freelance: Available</li>
+                <li> <a href="pratik resume 12.pdf" download>Download Resume</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="portfolio-section">
+        <div class="container">
+          <h2>My projects</h2>
+          <div class="portfolio-grid">
+            <div class="portfolio-item">
+              <h3>Chatting application </h3>
+              <p> Developing a feature-rich and secure chat application using
+                advanced java programming language and SQL for data management .</p>
+
+              
+
+              <h3>• Technologies Used : </h3>
+              <ul>
+                <li>• Advance Java </li><br>
+                <li>• SQL</li><br>
+                
+              </ul>
+            </div>
+            <div class="portfolio-item">
+              <h3>School website </h3>
+              <p> Developing a responsive and visually appealing school website
+              </p>
+              
+              <h3>• Technologies Used : </h3>
+              <ul>
+                <li>• HTML </li><br>
+                <li>• CSS</li><br>
+               
+              </ul>
+            </div>
+            <div class="portfolio-item">
+              <h3>Object detection System</h3>
+              <p>Developing an object detection system using digital image
+                processing techniques for accurate and efficient identification
+                and localization of object in image . </p>
+             
+              <h3>• Technologies Used : </h3>
+              <ul>
+                <li>• digital image processing (DIP) </li><br>
+                
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section">
+        <div class="container1">
+          <h2>Contact Me</h2>
+          <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Message" required></textarea>
+            <button type="submit">Send Message</button><br><br>
+
+          </form>
+          <a href="https://www.linkedin.com/in/pratik-nipane-306794244"
+            target="_blank" class="logo">
+            <img src="photo/linkedin logo.png" alt="LinkedIn">
+          </a>
+          <a href=""
+          target="_blank" class="logo">
+          <img src="photo/facebook.png" alt="facebook">
+        </a>
+        <a href=""
+        target="_blank" class="logo">
+        <img src="photo/github.webp" alt="github">
+      </a>
+        </div>
+      </section>
+      <script>
+     document.getElementById('contact-form').addEventListener('submit', function(event) {
+      event.preventDefault();
+    
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var message = document.getElementById('message').value;
+    
+      var subject = "Message from your portfolio website";
+      var recipient = "nipanepratik12@gmail.com";
+    
+      var mailtoLink = 'mailto:' + recipient + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      window.location.href = mailtoLink;
+    });
+    </script>
+
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Portfolio. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
